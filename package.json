@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce-api",
+  "version": "1.0.0",
+  "description": "ecommerce api rablo.in assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aj-2000/nodejs-ecommerce-api-assignment.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "express",
+    "rest_api",
+    "ecommerce"
+  ],
+  "author": "Ajay Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aj-2000/nodejs-ecommerce-api-assignment/issues"
+  },
+  "homepage": "https://github.com/aj-2000/nodejs-ecommerce-api-assignment#readme"
+}
