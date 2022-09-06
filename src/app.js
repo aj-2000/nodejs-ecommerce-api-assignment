@@ -5,7 +5,6 @@ const itemRouter =require('./routers/item')
 const cartRouter = require('./routers/cart')
 require('./db/mongoose')
 const port = process.env.PORT
-require('dotenv').config()
 const app = express();
 
 app.use(express.json());
