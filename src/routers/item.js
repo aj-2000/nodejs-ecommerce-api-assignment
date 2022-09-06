@@ -38,13 +38,13 @@ router.post("/items", async (req, res) => {
     res.status(201).send(newItem);
   } catch (error) {
     console.log({ error });
-    res.status(400).send({ message: req.body });
+    res.status(400).send(error);
   }
 });
 
 //update an item
 
-router.patch("/items/:id", Auth, async (req, res) => {
+router.patch("/items/:id", async (req, res) => {
   const updates = Object.keys(req.body);
   const allowedUpdates = ["name", "description", "category", "price"];
 
@@ -72,7 +72,7 @@ router.patch("/items/:id", Auth, async (req, res) => {
 });
 
 //delete item
-router.delete("/items/:id", Auth, async (req, res) => {
+router.delete("/items/:id", async (req, res) => {
   try {
     const deletedItem = await Item.findOneAndDelete({ _id: req.params.id });
     if (!deletedItem) {
